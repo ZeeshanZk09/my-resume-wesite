@@ -14,11 +14,11 @@
     }
     .nav-links ul {
         justify-content: space-evenly;
-        gap: 0.9rem;
+        gap: 0.8rem;
     }
     .nav-links > ul li a {
         font-size: 1.1rem;
-        padding: 0rem;
+        padding: 0;
     }   
     .welcome-heading {
         font-size: 2.4rem;
