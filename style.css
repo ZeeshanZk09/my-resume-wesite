@@ -172,6 +172,7 @@ body {
   padding: 5px 5px;
 }
 .footer-heading {
+    color: white;
   font-size: 2rem;
   text-align: center;
 }
@@ -310,12 +311,13 @@ body {
 }
 
 .contact-form {
-  background: rgba(0, 0, 0, 0.52);
+  background: transparent;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 .contact-heading h2 {
+    color: white;
   font-size: 4rem;
 }
 .contact-form input,
