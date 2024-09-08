@@ -14,7 +14,7 @@
     }
     .nav-links ul {
         justify-content: space-evenly;
-        /* gap: 10px; */
+        gap: 1rem;
     }
     .nav-links > ul li a {
         font-size: 1.1rem;
