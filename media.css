@@ -15,7 +15,7 @@
     .nav-links ul {
         padding-inline: 0.2rem;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
         gap: 0.4rem;
     }
     .nav-links > ul li a {
