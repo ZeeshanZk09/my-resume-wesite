@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  color-scheme: light dark;
+  background: url(./assets/bg-img.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+.black-shadow-box {
+  opacity: 0.69;
+  position: absolute;
+  inline-size: 100%;
+  block-size: 100%;
+  inset-block-start: 0;
+  background-color: black;
+  z-index: -1000;
+}
+
+.header {
+  overflow: hidden;
+  inline-size: 100%;
+  block-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-block-end: 4rem;
+  color: white;
+}
+.header-nav {
+  padding: 2rem;
+  display: flex;
+  background-color: black;
+  justify-content: space-between;
+  border-end-start-radius: 8px;
+  border-end-end-radius: 8px;
+  align-items: center;
+}
+
+.nav-heading > h1 {
+  font-size: 2.8rem;
+}
+.nav-links ul {
+  gap: 2rem;
+  display: flex;
+}
+.nav-links > ul li {
+  list-style-type: none;
+  :hover {
+    background-color: #e9e0d5;
+    color: black;
+  }
+}
+.nav-links > ul li a {
+  font-size: 1.5rem;
+  border-radius: 50%;
+  padding: 1.5rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+.header-body {
+  padding-inline: 0.8rem;
+}
+.theme-btn {
+  padding: 10px;
+  margin-block-end: 20px;
+  cursor: pointer;
+}
+.welcome-heading {
+  font-size: 4.8rem;
+  word-break: keep-all;
+  word-spacing: 20px;
+  text-align: center;
+}
+.about-p {
+  padding-inline: 4rem;
+  letter-spacing: 14px;
+  font-size: 2.3rem;
+  line-height: 4rem;
+  text-align: center;
+}
+.go-to-portfolio-btn {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: relative;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+  /* text-align: center; */
+  background-color: #000000;
+  color: #ffffff;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  block-size: 100%;
+  inline-size: 100%;
+  border-radius: 100px;
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn-white::after {
+  background-color: #fff;
+}
+.btn-white:hover::after {
+  transform: scale(1.4);
+  opacity: 0;
+}
+.btn-animation {
+  animation: moveinbottom 0.5s ease-out.75s;
+
+  animation-fill-mode: backwards;
+}
+
+.header-p {
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 8px;
+  letter-spacing: 5px;
+  :hover {
+    text-decoration: underline black;
+  }
+}
+.header-p > p {
+  cursor: pointer;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+.footer {
+  position: relative;
+  inset-block-end: 0;
+  inline-size: 100%;
+  background: #2a2a27c9;
+  min-block-size: 100px;
+  padding: 5px 5px;
+}
+.footer-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.footer p {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* ------------------------------Starting Portfolio Page ---------------------*/
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.main-left {
+  padding-inline: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+}
+.main-left h2 {
+  font-size: 4.8rem;
+  text-decoration: underline;
+}
+.main-left p {
+  font-size: 2rem;
+}
+.main-right {
+  border: 1px solid white;
+  block-size: 500px;
+  inline-size: 500px;
+  border-radius: 50%;
+}
+.container-projects {
+  background: rgba(255, 255, 255, 0.446);
+  display: flex;
+  flex-direction: column;
+  margin-inline: 4rem;
+  margin-block-end: 1rem;
+  border-radius: 1rem;
+  z-index: 10;
+  padding: 4rem;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.portfolio-container h1 {
+  font-size: 2.5rem;
+  margin-block-end: 2rem;
+  color: white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.project-card {
+  background-color: #4d4949;
+  border: 10px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  inline-size: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.project-card h2 {
+  font-size: 1.8rem;
+  margin-block-end: 1rem;
+  color: #007bff;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: white;
+  margin-block-end: 1.5rem;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------starting contact page------------------- */
+.contact-section {
+  border: 1px solid white;
+  margin: 10rem 2.5315vw;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 2rem 5vw 3rem 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form {
+  background: rgba(0, 0, 0, 0.52);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact-heading h2 {
+  font-size: 4rem;
+}
+.contact-form input,
+.contact-form textarea {
+  inline-size: 100%;
+  padding: 1rem;
+  font-size: 1.2vw;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  inline-size: 100%;
+  padding: 1rem;
+  font-size: 1.2vw;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/*---------- services page starting----------- */
+
+.services-section {
+  padding: 12vw 5.63vw;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin-block-end: 2vw;
+  padding: 2vw;
+  border-radius: 4px;
+}
+
+.service h3 {
+  font-size: 2vw;
+}
+
+.service p {
+  font-size: 1.2vw;
+}
