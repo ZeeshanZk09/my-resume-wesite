@@ -252,10 +252,10 @@ body {
   text-align: center;
 }
 
-.portfolio-container h1 {
+.container-projects h1 {
   font-size: 2.5rem;
   margin-block-end: 2rem;
-  color: white;
+  color: black;
 }
 
 .projects {
