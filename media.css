@@ -15,14 +15,14 @@
   }
   .nav-links ul {
     inline-size: 100vw;
-    padding-inline: 0.2rem;
+    padding-inline: 0.5rem;
     align-items: center;
     justify-content: space-between;
   
   }
   .nav-links > ul li a {
-    font-size: 1.1rem;
-    padding: 2vw;
+    font-size: 0.8rem;
+    padding: 0.5vh;
   }
   .welcome-heading {
     font-size: 2.4rem;
@@ -71,13 +71,17 @@
     margin-inline: 1rem;
     padding: 1.5rem;
   }
+  .services-section h2{
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .services-section p{
+    font-size: 1.2rem;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 768px) {
-  .contact-section {
-    padding: 10vw 5vw;
-  }
-
   .contact-form input,
   .contact-form textarea {
     font-size: 1rem;
@@ -89,9 +93,6 @@
 }
 
 @media (max-inline-size: 576px) {
-  .contact-section {
-    padding: 15vw 5vw;
-  }
 
   .contact-form input,
   .contact-form textarea {
@@ -126,7 +127,7 @@
   }
 }
 
-@media (min-width: 550px) and (max-width: 920px) {
+@media (min-width: 551px) and (max-width: 920px) {
   .header-nav {
     padding: 0.1rem;
     padding-block: 2rem;
@@ -139,14 +140,14 @@
   }
   .nav-links ul {
     inline-size: 100vw;
-    padding-inline: 1rem;
+    padding-inline: 0.1vh;
     align-items: center;
     gap: 0;
     justify-content: space-between;
   }
   .nav-links > ul li a {
     font-size: 2rem;
-    padding: 2vw;
+    padding: 1vw;
   }
   .main {
     flex-direction: column-reverse;

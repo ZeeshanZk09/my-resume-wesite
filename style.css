@@ -6,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  color: white;
   color-scheme: light dark;
   background: url(./assets/bg-img.png);
   background-attachment: fixed;
@@ -40,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-block-end: 4rem;
+  padding-block-end: 1rem;
   color: white;
 }
 .header-nav {
@@ -57,7 +58,7 @@ body {
   font-size: 2.8rem;
 }
 .nav-links ul {
-  inline-size: 70vw;
+  inline-size: 60vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,7 +73,7 @@ body {
 .nav-links > ul li a {
   font-size: 1.5rem;
   border-radius: 50%;
-  padding: 1.5rem;
+  padding: 1rem;
   color: aliceblue;
   text-decoration: none;
 }
@@ -86,7 +87,7 @@ body {
 }
 .welcome-heading {
   padding: 0.5rem;
-  font-size: 7rem;
+  font-size: 6rem;
   word-break: keep-all;
   word-spacing: 20px;
   text-align: center;
@@ -302,20 +303,34 @@ body {
 }
 
 /* ---------------------starting contact page------------------- */
+.contact-page{
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-page h2{
+  padding: 2rem;
+  font-size: 4rem;
+  font-weight: 400;
+}
+.contact-page p{
+  padding: 2rem;
+  font-size: 1.5rem;
+}
 .contact-section {
   inline-size: 80%;
   block-size: 100%;
   border: 1px solid white;
-  margin: 20rem 2.5315rem;
   border-radius: 1rem;
   background-color: transparent;
-  padding: 2rem 5vw 3rem 5vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .contact-form {
+  padding: 1rem;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -324,7 +339,7 @@ body {
 .contact-heading h2 {
   word-break: break-all;
     color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .contact-form input,
 .contact-form textarea {
@@ -346,22 +361,29 @@ body {
   background-color: #333;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 4rem;
 }
+
 
 /*---------- services page starting----------- */
 
 .services-section {
-  padding: 12vw 5.63vw;
+  padding: 1vw 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   inline-size: 100%;
   block-size: 100%;
 }
-
+.services-section h2{
+  font-size: 4rem;
+  font-weight: 400;
+}
+.services-section p{
+  font-size: 1.5rem;
+}
 .service {
-  block-size: 100vh;
+  block-size: max-content;
   word-break: break-all;
   display: flex;
   flex-direction: column;
@@ -384,3 +406,4 @@ body {
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.523);
 }
+
