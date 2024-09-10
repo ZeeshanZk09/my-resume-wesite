@@ -310,6 +310,7 @@ body {
   justify-content: left;
 }
 .contact-page h2 {
+  padding-inline: 1rem;
   font-size: 4rem;
   font-weight: 400;
 }
