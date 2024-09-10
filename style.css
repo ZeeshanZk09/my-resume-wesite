@@ -12,8 +12,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .container {
@@ -171,7 +171,7 @@ body {
   position: relative;
   inset-block-end: 0;
   inline-size: 100%;
-  background: #e6e6e039;
+  background: #f4f4f35f;
   min-block-size: 100px;
   padding: 5px 5px;
 }
