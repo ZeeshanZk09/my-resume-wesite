@@ -30,7 +30,7 @@ body {
   inline-size: 100%;
   block-size: 100%;
   inset-block-start: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.613);
   z-index: -1000;
 }
 
@@ -304,7 +304,6 @@ body {
 
 /* ---------------------starting contact page------------------- */
 .contact-page {
-  /* margin-inline: 1rem; */
   padding-block: 1rem;
   display: flex;
   flex-direction: column;
@@ -312,7 +311,6 @@ body {
   justify-content: left;
 }
 .contact-page h2 {
-  padding: 1rem;
   font-size: 4rem;
   font-weight: 400;
 }
@@ -392,7 +390,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 3rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.22);
   color: white;
   padding: 1.3rem;
   border-radius: 1rem;
