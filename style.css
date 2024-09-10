@@ -343,7 +343,7 @@ body {
 }
 .contact-form input,
 .contact-form textarea {
-  background: rgba(155, 156, 142, 0.115);
+  background: rgba(15, 15, 14, 0.22);
   color: black;
   inline-size: 100%;
   padding: 0.5rem;
@@ -357,7 +357,7 @@ body {
   inline-size: 100%;
   padding: 1rem;
   font-size: 2rem;
-  background-color: #333;
+  background-color: #33333398;
   color: white;
   border: none;
   border-radius: 4rem;
@@ -389,7 +389,7 @@ body {
   align-items: center;
   text-align: center;
   gap: 3rem;
-  background: rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.355);
   color: white;
   padding: 1.3rem;
   border-radius: 1rem;
