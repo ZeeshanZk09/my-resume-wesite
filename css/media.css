@@ -45,12 +45,28 @@
   .header-p > p {
     font-size: 1rem;
   }
-  .main {
+  .main-top {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .main-left {
+  .main-bottom, .main-bottom-flex{
     padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding-block: 1rem;
+    gap: 2rem;
+  }
+  .main-bottom, .main-bottom-flex h2{
+    color: black;
+    font-size: 2.2rem;
+  }
+  .main-bottom, .main-bottom-flex p{
+    font-size: 1.5rem;
+    text-align: justify;
+
+  }
+  .main-left {
+    padding-inline: 1rem;
   }
   .main-left h2 {
     font-size: 2.2rem;
@@ -82,6 +98,9 @@
 }
 
 @media (max-width: 768px) {
+  .contact-heading h2 {
+    font-size: 3rem;
+  }
   .contact-form input,
   .contact-form textarea {
     font-size: 1rem;
@@ -89,6 +108,22 @@
 
   .contact-form button {
     font-size: 1rem;
+  }
+  .skills-list, .education-list {
+    flex-direction: column;
+  }
+
+  .resume-container {
+    margin-inline: 1rem;
+    padding: 15px;
+  }
+
+  .resume-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .resume-container h3 {
+    font-size: 1.1rem;
   }
 }
 
@@ -149,9 +184,23 @@
     font-size: 2rem;
     padding: 1vw;
   }
-  .main {
+  .main{
+    padding-inline: 0.1rem;
+    width: 90%;
+
+  }
+  .main-top {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .main-left{
+    padding-inline: 1rem;
+  }
+  .main-left h2 {
+    font-size: 2.2rem;
+  }
+  .main-left p {
+    font-size: 1.5rem;
   }
   .main-right {
     block-size: 400px;
@@ -161,5 +210,22 @@
     block-size: 370px;
     inline-size: 420px;
   }
-  
+  .main-bottom, .main-bottom-flex{
+    padding-inline: 2.2rem;
+    display: flex;
+    flex-direction: column;
+    padding-block: 1rem;
+    gap: 2rem;
+  }
+  .main-bottom,.main-bottom-flex h2{
+    color: black; 
+    font-size: 2.2rem;
+  }
+  .main-bottom,.main-bottom-flex p{
+    word-break: break-all;
+    font-size: 1.5rem;
+    text-align: justify;
+
+  }
+
 }

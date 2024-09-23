@@ -8,7 +8,7 @@
 body {
   color: white;
   color-scheme: light dark;
-  background: url(./assets/bg-img.png);
+  background: url(../assets/bg-img.png);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@ body {
   inline-size: 100%;
   block-size: 100%;
   inset-block-start: 0;
-  background-color: rgba(0, 0, 0, 0.613);
+  background-color: rgba(158, 163, 164, 0.377);
   z-index: -1000;
 }
 
@@ -65,8 +65,7 @@ body {
 .nav-links > ul li {
   list-style-type: none;
   :hover {
-    background-color: #e9e0d5;
-    color: black;
+    text-decoration: underline white;
   }
 }
 .nav-links > ul li a {
@@ -85,6 +84,7 @@ body {
   cursor: pointer;
 }
 .welcome-heading {
+  color: black;
   padding: 0.5rem;
   font-size: 6rem;
   word-break: keep-all;
@@ -167,18 +167,42 @@ body {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
   position: relative;
   inset-block-end: 0;
   inline-size: 100%;
   background: #f4f4f35f;
   min-block-size: 100px;
-  padding: 5px 5px;
+  padding: 1rem 1rem;
+  padding-block-end: 4rem;
+}
+
+.follow-link-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr{
+  margin-block-start: 1rem;
+  color: black;
+  margin-inline: 3rem;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.49);
 }
 .footer-heading {
-  color: white;
-  font-size: 2rem;
+  color: black;
+  font-size: 1.7rem;
   text-align: center;
 }
+
+.footer-heading h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .social-icon,
 .menu {
   position: relative;
@@ -206,8 +230,8 @@ body {
 }
 
 .footer p {
-  color: #fff;
-  font-size: 1.7rem;
+  color: black;
+  font-size: 1.3rem;
   font-weight: 300;
   text-align: center;
 }
@@ -215,22 +239,94 @@ body {
 /* ------------------------------Starting Portfolio Page ---------------------*/
 .main {
   display: flex;
-  justify-content: space-between;
-  margin: 1rem;
-}
-.main-left {
-  padding-inline: 4rem;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  padding-inline: 0;
+  padding-block: 1rem;
+  margin-block: 1rem;
+}
+.main-left{
+  padding-inline: 1rem;
   gap: 2rem;
   color: white;
 }
+.main-top{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+
+.main-bottom-flex{
+  padding-inline: 2rem;
+  padding-block: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.hidden{
+  display: none;
+
+}
+
+
+
+#toggleButton{
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+#toggleButton::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+
+#toggleButton:hover::before{
+  left: 0;
+}
+#toggleButton span {
+  position: relative;
+  z-index: -1;
+}
+#toggleButton:hover{
+  color: #000; /* Change text color on hover */
+}
+.main-bottom, .main-bottom-flex h2{
+  color: black;
+  font-size: 4.8rem;
+  text-decoration: underline;
+}
+.main-bottom, .main-bottom-flex p{
+  font-size: 2rem;
+}
 .main-left h2 {
+  color: black;
   font-size: 4.8rem;
   text-decoration: underline;
 }
 .main-left p {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .main-right {
   border: 1px solid white;
@@ -238,16 +334,70 @@ body {
   inline-size: 500px;
   border-radius: 50%;
 }
+
+.resume-container {
+  max-width: 96vw;
+  width: 100vw;
+  padding: 20px;
+}
+
+.resume-container h2 {
+  font-size: 4.8rem;
+  margin-bottom: 20px;
+  text-decoration: underline;
+
+  color: black;
+}
+
+.skills-container, .education-container {
+  margin-bottom: 40px;
+}
+
+.skills-list, .education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skill-item, .education-item {
+  background-color: #fafafa;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.resume-container p {
+  font-size: 1rem;
+  color: #555555;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 4px;
+}
 .container-projects {
-  background: rgba(255, 255, 255, 0.446);
+
   display: flex;
   flex-direction: column;
   margin-inline: 4rem;
-  margin-block-end: 1rem;
-  border-radius: 1rem;
   z-index: 10;
   padding: 4rem;
-  background-color: #f4f4f4;
+ 
   text-align: center;
 }
 
@@ -310,6 +460,7 @@ body {
   justify-content: left;
 }
 .contact-page h2 {
+  color: black;
   padding-inline: 1rem;
   font-size: 4rem;
   font-weight: 400;
@@ -339,8 +490,9 @@ body {
 }
 .contact-heading h2 {
   word-break: break-all;
-  color: white;
-  font-size: 2.5rem;
+  color: black;
+  font-weight: 500;
+  font-size: 5rem;
 }
 .contact-form input,
 .contact-form textarea {
@@ -358,8 +510,8 @@ body {
   inline-size: 100%;
   padding: 1rem;
   font-size: 2rem;
-  background-color: #33333398;
-  color: white;
+  background-color: #fffefe55;
+  color: black;
   border: none;
   border-radius: 4rem;
 }
@@ -376,6 +528,7 @@ body {
   block-size: 100%;
 }
 .services-section h2 {
+  color: black;
   font-size: 4rem;
   font-weight: 400;
 }
@@ -390,18 +543,19 @@ body {
   align-items: center;
   text-align: center;
   gap: 3rem;
-  background: rgba(0, 0, 0, 0.355);
+  background: #8886867d;
   color: white;
   padding: 1.3rem;
   border-radius: 1rem;
 }
 
 .service h3 {
+  color: black;
   font-size: 3rem;
   text-decoration: underline;
 }
 
 .service p {
   font-size: 2rem;
-  color: rgba(255, 255, 255, 0.523);
+  color: white;
 }
